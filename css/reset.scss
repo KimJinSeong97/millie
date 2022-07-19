@@ -1,19 +1,18 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #242424;
 }
 
-ul,ol,li{
+ul,
+ol,
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #333;
 }
-
-
-
