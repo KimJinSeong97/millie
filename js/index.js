@@ -175,4 +175,4 @@ $(function () {
         $(".genre5").fadeIn(250);
         $(".genre1, .genre2, .genre3, .genre4").fadeOut(250);
     })
-})
+});
