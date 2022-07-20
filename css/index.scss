@@ -40,6 +40,16 @@
     }
 }
 
+/*addclass*/
+.btn_on {
+    background-color: #242424 !important;
+    color: #fff;
+}
+
+.tap_on {
+    background-color: #f7f7f7;
+}
+
 nav {
     width: 100%;
     height: 64px;
@@ -290,11 +300,6 @@ section {
             font-size: 14px;
             margin-left: 12px;
             cursor: pointer;
-        }
-
-        .btn_on {
-            background-color: #242424;
-            color: #fff;
         }
 
         ul {
@@ -549,6 +554,11 @@ section {
     height: 950px;
     background-color: #f7f7f7;
 
+    .cw_2,
+    .cw_3 {
+        display: none;
+    }
+
     .contents_wrap {
         width: 1440px;
         height: 950px;
@@ -556,9 +566,13 @@ section {
         padding: 72px 144px;
         position: relative;
 
-        >img {
-            width: 44px;
-            margin-top: 24px
+        .contents_box1 {
+            float: left;
+
+            >img {
+                width: 44px;
+                margin-top: 24px
+            }
         }
 
         h2 {
@@ -587,33 +601,33 @@ section {
             cursor: pointer;
         }
 
-        .phone_wrap {
-            width: 1320px;
-            height: 680px;
-            position: relative;
-            top: -72.5%;
-            left: 72.5%;
-
-            // .phone_border{
-            //     width: 330px;
-            //     height: 680px;
-            //     background-image: url(../img/index/contents_phone.png);
-            //     background-size: cover;
-            //     overflow: hidden;
-            // }
-
-            .s_s {
+        .phone_border {
+            img {
                 width: 330px;
-                float: left;
+                height: 680px;
+                position: absolute;
+                right: 10%;
+                z-index: 1;
+                cursor: no-drop;
+            }
+        }
 
+        .contents_box2 {
+            width: 330px;
+            height: 680px;
+            float: right;
+            overflow: hidden;
+            border-radius: 55px;
+        }
 
-                img {
-                    width: 100%;
-                }
+        .phone_wrap {
+            width: 330px;
+            display: flex;
+            transition: transform ease-in-out 0.25s;
 
-                video {
-                    width: 100%;
-                }
+            img {
+                width: 330px;
+                height: 680px;
             }
         }
     }
@@ -727,7 +741,7 @@ footer {
 
         img {
             width: 24px;
-
+            cursor: pointer;
         }
     }
 
@@ -741,6 +755,7 @@ footer {
             background-color: #fff;
             border: none;
             padding-bottom: 10px;
+            cursor: pointer;
         }
 
         ul {
@@ -803,6 +818,7 @@ footer {
         transform: translate(-50%);
         font-size: 16px;
         cursor: pointer;
+        z-index: 2;
 
         b {
             color: #fff;

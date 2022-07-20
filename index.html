@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="css/index.css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js"></script>
+
 </head>
 
 <body>
     <nav>
         <img src="img/index/full-logo.png" alt="logo">
-
         <div class="right_menu">
             <div class="menu"><a href="#">기업문의</a></div>
             <div class="menu"><a href="#">계정관리</a></div>
@@ -269,45 +268,112 @@
 
     <div class="contents_tap">
         <ul>
-            <li>
+            <li class="tap1 tap_on">
                 <img src="img/index/audiobook.png" alt="audiobook">
                 <div>오디오북</div>
             </li>
-            <li>
+            <li class="tap2">
                 <img src="img/index/viewer.png" alt="viewer">
                 <div>밀리 뷰어</div>
             </li>
-            <li>
+            <li class="tap3">
                 <img src="img/index/today.png" alt="today">
                 <div>투데이</div>
             </li>
         </ul>
     </div>
-    <div id="contents">
-        <div class="contents_wrap">
-            <img src="img/index/audiobook-icon.png" alt="audiobook-icon">
-            <h2>오디오북</h2>
-            <p>세상에서 가장 <br> 교양있는 수면제</p>
-            <p><b>하루의 시작과 마무리를 오디오북과 함께</b> <br> 지하철에서도, 잠들기 전에도 독서하세요</p>
-            <button type="button" class="screen_btn1">1</button>
-            <button type="button" class="screen_btn2">2</button>
-            <button type="button" class="screen_btn3">3</button>
-            <button type="button" class="screen_btn4">4</button>
 
-            <div class="phone_wrap">
-                <!-- <div class="phone_border"></div> -->
-                <!-- <div class="phone_screen1 s_s">
-                    <img src="img/index/audiobook01.png" alt="audiobook01">
+    <div id="contents">
+        <div class="contents_wrap cw_1">
+            <div class="contents_box1">
+                <img src="img/index/audiobook-icon.png" alt="audiobook-icon">
+                <h2>오디오북</h2>
+                <p>세상에서 가장 <br> 교양있는 수면제</p>
+                <p class="ment"><b>하루의 시작과 마무리를 오디오북과 함께</b> <br> 지하철에서도, 잠들기 전에도 독서하세요</p>
+                <button type="button" class="screen_btn1 btn_on">1</button>
+                <button type="button" class="screen_btn2">2</button>
+                <button type="button" class="screen_btn3">3</button>
+                <button type="button" class="screen_btn4">4</button>
+            </div>
+            <div class="phone_border"><img src="img/index/contents_phone.png" alt=""></div>
+
+            <div class="contents_box2">
+                <div class="phone_wrap">
+                    <div class="phone_screen1 s_s">
+                        <img src="img/index/audiobook01.png" alt="audiobook01">
+                    </div>
+                    <div class="phone_screen2 s_s">
+                        <video src="img/index/audiobook02.mp4" autoplay="autoplay" preload="auto" muted="muted"
+                            loop="loop" style="width: 330px;"></video>
+                    </div>
+                    <div class="phone_screen3 s_s">
+                        <img src="img/index/audiobook03.png" alt="audiobook03">
+                    </div>
+                    <div class="phone_screen4 s_s">
+                        <img src="img/index/audiobook04.png" alt="audiobook04">
+                    </div>
                 </div>
-                <div class="phone_screen2 s_s">
-                    <video src="img/index/audiobook02.mp4"></video>
+            </div>
+        </div>
+
+        <div class="contents_wrap cw_2">
+            <div class="contents_box1">
+                <img src="img/index/viewer-icon.png" alt="viewer-icon">
+                <h2>밀리뷰어</h2>
+                <p>독서를 위한 가장 <br> 완벽한 도구</p>
+                <p class="ment"><b>시선 추적 기능</b> <br> 눈동자로 페이지를 넘길 수 있어요</p>
+                <button type="button" class="screen_btn1 btn_on">1</button>
+                <button type="button" class="screen_btn2">2</button>
+                <button type="button" class="screen_btn3">3</button>
+                <button type="button" class="screen_btn4">4</button>
+            </div>
+            <div class="phone_border"><img src="img/index/contents_phone.png" alt=""></div>
+
+            <div class="contents_box2">
+                <div class="phone_wrap">
+                    <div class="phone_screen1 s_s">
+                        <video src="img/index/viewer01.mp4" autoplay="autoplay" preload="auto" muted="muted" loop="loop"
+                            style="width: 330px;"></video>
+                    </div>
+                    <div class="phone_screen2 s_s">
+                        <img src="img/index/viewer02.png" alt="viewer02">
+                    </div>
+                    <div class="phone_screen3 s_s">
+                        <video src="img/index/viewer03.mp4" autoplay="autoplay" preload="auto" muted="muted" loop="loop"
+                            style="width: 330px;"></video>
+                    </div>
+                    <div class="phone_screen4 s_s">
+                        <video src="img/index/viewer04.mp4" autoplay="autoplay" preload="auto" muted="muted" loop="loop"
+                            style="width: 330px;"></video>
+                    </div>
                 </div>
-                <div class="phone_screen3 s_s">
-                    <img src="img/index/audiobook03.png" alt="audiobook03">
+            </div>
+        </div>
+
+        <div class="contents_wrap cw_3">
+            <div class="contents_box1">
+                <img src="img/index/today-icon.png" alt="audiobook-icon">
+                <h2>투데이</h2>
+                <p>쓱 - 훑어만 봐도 <br> 독서 트렌드를 한 눈에</p>
+                <p class="ment"><b>당신을 위한 추천</b> <br> 키워드로 한 눈에 정리한 추천 도서</p>
+                <button type="button" class="screen_btn1 btn_on">1</button>
+                <button type="button" class="screen_btn2">2</button>
+                <button type="button" class="screen_btn3">3</button>
+            </div>
+            <div class="phone_border"><img src="img/index/contents_phone.png" alt=""></div>
+
+            <div class="contents_box2">
+                <div class="phone_wrap">
+                    <div class="phone_screen1 s_s">
+                        <img src="img/index/today01.png" alt="today01">
+                    </div>
+                    <div class="phone_screen2 s_s">
+                        <img src="img/index/today02.png" alt="today02">
+                    </div>
+                    <div class="phone_screen3 s_s">
+                        <img src="img/index/today03.png" alt="today03">
+                    </div>
                 </div>
-                <div class="phone_screen4 s_s">
-                    <img src="img/index/audiobook04.png" alt="audiobook04">
-                </div> -->
             </div>
         </div>
     </div>
@@ -376,7 +442,7 @@
             </div>
         </div>
         <div class="footer_info">
-            <button type="button" id="ft_btn">사업자 정보 펼쳐보기</button>
+            <button type="button" value="1">사업자 정보 펼쳐보기</button>
             <ul>
                 <li>대표이사 : 서영택</li>
                 <li>사업자등록번호 : 423-88-00370</li>
@@ -409,6 +475,8 @@
     <div id="free_btn">
         <button type="button"><b>첫 달 무료</b>로 독서 시작하기</button>
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

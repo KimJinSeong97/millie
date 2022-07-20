@@ -18,6 +18,16 @@ a {
   text-decoration: none;
 }
 
+/*addclass*/
+.btn_on {
+  background-color: #242424 !important;
+  color: #fff;
+}
+
+.tap_on {
+  background-color: #f7f7f7;
+}
+
 nav {
   width: 100%;
   height: 64px;
@@ -396,10 +406,6 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   margin-left: 12px;
   cursor: pointer;
 }
-#category .genre .btn_on {
-  background-color: #242424;
-  color: #fff;
-}
 #category .genre ul {
   width: 1200px;
   height: 350px;
@@ -663,6 +669,10 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   height: 950px;
   background-color: #f7f7f7;
 }
+#contents .cw_2,
+#contents .cw_3 {
+  display: none;
+}
 #contents .contents_wrap {
   width: 1440px;
   height: 950px;
@@ -670,7 +680,10 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   padding: 72px 144px;
   position: relative;
 }
-#contents .contents_wrap > img {
+#contents .contents_wrap .contents_box1 {
+  float: left;
+}
+#contents .contents_wrap .contents_box1 > img {
   width: 44px;
   margin-top: 24px;
 }
@@ -702,22 +715,29 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   margin-right: 5px;
   cursor: pointer;
 }
-#contents .contents_wrap .phone_wrap {
-  width: 1320px;
-  height: 680px;
-  position: relative;
-  top: -72.5%;
-  left: 72.5%;
-}
-#contents .contents_wrap .phone_wrap .s_s {
+#contents .contents_wrap .phone_border img {
   width: 330px;
-  float: left;
+  height: 680px;
+  position: absolute;
+  right: 10%;
+  z-index: 1;
+  cursor: no-drop;
 }
-#contents .contents_wrap .phone_wrap .s_s img {
-  width: 100%;
+#contents .contents_wrap .contents_box2 {
+  width: 330px;
+  height: 680px;
+  float: right;
+  overflow: hidden;
+  border-radius: 55px;
 }
-#contents .contents_wrap .phone_wrap .s_s video {
-  width: 100%;
+#contents .contents_wrap .phone_wrap {
+  width: 330px;
+  display: flex;
+  transition: transform ease-in-out 0.25s;
+}
+#contents .contents_wrap .phone_wrap img {
+  width: 330px;
+  height: 680px;
 }
 
 #review {
@@ -823,6 +843,7 @@ footer .footer_head span {
 }
 footer .footer_head img {
   width: 24px;
+  cursor: pointer;
 }
 footer .footer_info {
   width: 1250px;
@@ -834,6 +855,7 @@ footer .footer_info button {
   background-color: #fff;
   border: none;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 footer .footer_info ul {
   display: none;
@@ -884,6 +906,7 @@ footer .footer_service p {
   transform: translate(-50%);
   font-size: 16px;
   cursor: pointer;
+  z-index: 2;
 }
 #free_btn button b {
   color: #fff;
