@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,14 +19,23 @@ a {
   text-decoration: none;
 }
 
-/*addclass*/
-.btn_on {
-  background-color: #242424 !important;
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #242424;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.5px;
 }
 
-.tap_on {
-  background-color: #f7f7f7;
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 nav {
@@ -64,6 +74,82 @@ nav .right_menu button {
   line-height: 18px;
   margin-left: 24px;
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding-bottom: 100px;
+}
+footer .footer_head {
+  width: 1250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_head span {
+  font-weight: 600;
+}
+footer .footer_head img {
+  width: 24px;
+  cursor: pointer;
+}
+footer .footer_info {
+  width: 1250px;
+  margin: 0 auto;
+}
+footer .footer_info button {
+  font-size: 10px;
+  color: #a5a5a5;
+  background-color: #fff;
+  border: none;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+footer .footer_info ul {
+  display: none;
+  font-size: 10px;
+}
+footer .footer_info ul li {
+  color: #a5a5a5;
+  margin-right: 15px;
+}
+footer .footer_info .info_onoff {
+  display: flex;
+}
+footer .footer_service {
+  width: 1250px;
+  margin: 0 auto;
+}
+footer .footer_service ul {
+  display: flex;
+  font-size: 12px;
+  margin-top: 15px;
+}
+footer .footer_service ul li {
+  margin-right: 12px;
+}
+footer .footer_service ul li a {
+  color: #6f6f6f;
+}
+footer .footer_service ul li a b {
+  color: #6f6f6f;
+}
+footer .footer_service p {
+  font-size: 10px;
+  color: #6f6f6f;
+  margin-top: 20px;
+}
+
+/*addclass*/
+.btn_on {
+  background-color: #242424 !important;
+  color: #fff;
+}
+
+.tap_on {
+  background-color: #f7f7f7;
 }
 
 .intro_bg_color {
@@ -919,72 +1005,6 @@ section .list4 .box4 .badge img:nth-of-type(2) {
 }
 #qna ul li .a b {
   color: #555;
-}
-
-footer {
-  width: 100%;
-  padding-bottom: 100px;
-}
-footer .footer_head {
-  width: 1250px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-footer .footer_head span {
-  font-weight: 600;
-}
-footer .footer_head img {
-  width: 24px;
-  cursor: pointer;
-}
-footer .footer_info {
-  width: 1250px;
-  margin: 0 auto;
-}
-footer .footer_info button {
-  font-size: 10px;
-  color: #a5a5a5;
-  background-color: #fff;
-  border: none;
-  padding-bottom: 10px;
-  cursor: pointer;
-}
-footer .footer_info ul {
-  display: none;
-  font-size: 10px;
-}
-footer .footer_info ul li {
-  color: #a5a5a5;
-  margin-right: 15px;
-}
-footer .footer_info .info_onoff {
-  display: flex;
-}
-footer .footer_service {
-  width: 1250px;
-  margin: 0 auto;
-}
-footer .footer_service ul {
-  display: flex;
-  font-size: 12px;
-  margin-top: 15px;
-}
-footer .footer_service ul li {
-  margin-right: 12px;
-}
-footer .footer_service ul li a {
-  color: #6f6f6f;
-}
-footer .footer_service ul li a b {
-  color: #6f6f6f;
-}
-footer .footer_service p {
-  font-size: 10px;
-  color: #6f6f6f;
-  margin-top: 20px;
 }
 
 #free_btn button {
