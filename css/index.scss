@@ -40,6 +40,18 @@
     }
 }
 
+@mixin scroll_event1 {
+    transform: translateY(80px);
+    transition: all 2s;
+    opacity: 0;
+}
+
+@mixin scroll_event2 {
+    transform: translateY(40px);
+    transition: all 2s;
+    opacity: 0;
+}
+
 /*addclass*/
 .btn_on {
     background-color: #242424 !important;
@@ -123,6 +135,7 @@ nav {
             background-image: url(../img/index/slogan.png);
             background-repeat: no-repeat;
             background-size: 350px;
+            animation: scroll_e1 2s;
         }
 
         p {
@@ -131,6 +144,36 @@ nav {
             background-image: url(../img/index/millielibrary.png);
             background-repeat: no-repeat;
             background-size: 180px;
+            animation: scroll_e2 2s;
+        }
+
+        @keyframes scroll_e1 {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes scroll_e2 {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            33% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     }
 }
@@ -142,10 +185,12 @@ nav {
 
     h2 {
         @include h2;
+        @include scroll_event1;
     }
 
     p {
         @include p;
+        @include scroll_event2;
     }
 
     .slide1 {
@@ -212,10 +257,12 @@ section {
 
     h2 {
         @include h2;
+        @include scroll_event1;
     }
 
     p {
         @include p;
+        @include scroll_event2;
     }
 
     .list1,
@@ -280,10 +327,12 @@ section {
 
     h2 {
         @include h2;
+        @include scroll_event1;
     }
 
     p {
         @include p;
+        @include scroll_event2;
     }
 
     .genre {
@@ -343,10 +392,12 @@ section {
 
     h2 {
         @include h2;
+        @include scroll_event1;
     }
 
     p {
         @include p;
+        @include scroll_event2;
     }
 
     .reading_wrap {
@@ -409,11 +460,12 @@ section {
 
     h2 {
         @include h2;
-
+        @include scroll_event1;
     }
 
     >p {
         @include p;
+        @include scroll_event2;
     }
 
     .subscribing_price {
@@ -577,12 +629,14 @@ section {
 
         h2 {
             @include h2;
+            @include scroll_event1;
             text-align: left;
             margin-top: 24px
         }
 
         p {
             @include p;
+            @include scroll_event2;
             text-align: left;
         }
 
@@ -610,6 +664,7 @@ section {
                 z-index: 1;
                 cursor: no-drop;
             }
+
         }
 
         .contents_box2 {
@@ -647,10 +702,12 @@ section {
 
         iframe {
             margin-top: -60px;
+            border: none;
         }
 
         h2 {
             @include h2;
+            @include scroll_event1;
             display: inline-block;
             padding-top: 80px;
             text-align: left;
@@ -658,6 +715,7 @@ section {
 
         p {
             @include p;
+            @include scroll_event2;
             text-align: left;
         }
     }

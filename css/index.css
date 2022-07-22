@@ -96,6 +96,8 @@ nav .right_menu button {
   background-image: url(../img/index/slogan.png);
   background-repeat: no-repeat;
   background-size: 350px;
+  -webkit-animation: scroll_e1 2s;
+          animation: scroll_e1 2s;
 }
 #intro .intro_text p {
   margin-top: 310px;
@@ -103,6 +105,56 @@ nav .right_menu button {
   background-image: url(../img/index/millielibrary.png);
   background-repeat: no-repeat;
   background-size: 180px;
+  -webkit-animation: scroll_e2 2s;
+          animation: scroll_e2 2s;
+}
+@-webkit-keyframes scroll_e1 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scroll_e1 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scroll_e2 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scroll_e2 {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #slide_wrap {
@@ -115,12 +167,18 @@ nav .right_menu button {
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
 }
 #slide_wrap p {
   font-size: 22px;
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
 }
 #slide_wrap .slide1 {
   height: 220px;
@@ -210,12 +268,18 @@ section h2 {
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
 }
 section p {
   font-size: 22px;
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
 }
 section .list1,
 section .list2,
@@ -384,12 +448,18 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
 }
 #category p {
   font-size: 22px;
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
 }
 #category .genre {
   width: 1200px;
@@ -489,12 +559,18 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
 }
 #reading p {
   font-size: 22px;
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
 }
 #reading .reading_wrap {
   width: 900px;
@@ -549,12 +625,18 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
 }
 #subscribing > p {
   font-size: 22px;
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
 }
 #subscribing .subscribing_price {
   width: 1024px;
@@ -692,6 +774,9 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
   text-align: left;
   margin-top: 24px;
 }
@@ -700,6 +785,9 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
   text-align: left;
 }
 #contents .contents_wrap p:nth-of-type(2) {
@@ -754,12 +842,16 @@ section .list4 .box4 .badge img:nth-of-type(2) {
 }
 #review .review_wrap iframe {
   margin-top: -60px;
+  border: none;
 }
 #review .review_wrap h2 {
   font-size: 49px;
   text-align: center;
   margin-bottom: 24px;
   line-height: 130%;
+  transform: translateY(80px);
+  transition: all 2s;
+  opacity: 0;
   display: inline-block;
   padding-top: 80px;
   text-align: left;
@@ -769,6 +861,9 @@ section .list4 .box4 .badge img:nth-of-type(2) {
   text-align: center;
   color: #555;
   line-height: 150%;
+  transform: translateY(40px);
+  transition: all 2s;
+  opacity: 0;
   text-align: left;
 }
 

@@ -330,3 +330,47 @@ document.querySelector('.cw_3 .screen_btn3').addEventListener('click', function 
     document.querySelector('.cw_3 .phone_wrap').style.transform = 'translate(-660px)';
     document.querySelector('.cw_3 .ment').innerHTML = "<b>책-잇</b> <br> 책을 통해 트렌드와 문해력을 한번에!";
 });
+
+// scroll, opacity up
+$(window).scroll(function () {
+    var ws = $(this).scrollTop();
+
+    $("#slide_wrap h2, #slide_wrap p").css("transform", "translateY(0px)").css("opacity", "1");
+
+    var scroll_nav = $('#slide_wrap').offset().top;
+    if (ws > scroll_nav - 50) {
+        $('nav img').attr("src", "img/index/simple-logo.png").css("width", "23px");
+    } else {
+        $('nav img').attr("src", "img/index/full-logo.png").css("width", "56px");;
+    }
+
+    var scroll_section = $('section').offset().top;
+    if (ws > scroll_section - 700) {
+        $('section h2, section p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_category = $('#category').offset().top;
+    if (ws > scroll_category - 700) {
+        $('#category h2, #category p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_reading = $('#reading').offset().top;
+    if (ws > scroll_reading - 700) {
+        $('#reading h2, #reading p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_subscribing = $('#subscribing').offset().top;
+    if (ws > scroll_subscribing - 700) {
+        $('#subscribing h2, #subscribing p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_contents = $('#contents').offset().top;
+    if (ws > scroll_contents - 700) {
+        $('#contents h2, #contents p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+
+    var scroll_review = $('#review').offset().top;
+    if (ws > scroll_review - 700) {
+        $('#review h2, #review p').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+});
