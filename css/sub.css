@@ -68,6 +68,7 @@ section .book_wrap .book_box .book_price {
   width: 1200px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
 .tap_menu ul li {
   width: 380px;
@@ -81,6 +82,87 @@ section .book_wrap .book_box .book_price {
 
 #book_info {
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #f7f7f7;
+}
+#book_info .contents1 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2.5%;
+  line-height: 30px;
+}
+#book_info .contents1 h2 {
+  font-size: 20px;
+}
+#book_info .contents1 b {
+  color: #6f6f6f;
+}
+#book_info .contents2 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2.5%;
+}
+#book_info .contents2 h2 {
+  font-size: 20px;
+}
+#book_info .contents2 table {
+  max-width: 940px;
+  margin: 0 auto;
+  border-top: 1px solid #dfdfdf;
+  border-collapse: collapse;
+}
+#book_info .contents2 table th {
+  width: 170px;
+  height: 41px;
+  background-color: #f8f8f8;
+  font-weight: 400;
+  font-size: 13px;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+#book_info .contents2 table td {
+  width: 770px;
+  font-size: 12px;
+  color: #6f6f6f;
+  background-color: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  padding-left: 14px;
+}
+
+#related {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+#related h2 {
+  padding-top: 80px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+#related ul {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #dfdfdf;
+}
+#related ul li {
+  border: 1px solid #dfdfdf;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#related ul li img {
+  width: 145px;
+  padding-bottom: 10px;
+  padding-top: 16px;
+}
+#related ul li h4 {
+  width: 145px;
+}
+#related ul li h5 {
+  width: 145px;
+  font-size: 14px;
+  color: #6f6f6f;
+  font-weight: 400;
+  margin-bottom: 3px;
 }
