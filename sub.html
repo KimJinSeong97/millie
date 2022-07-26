@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>책정보 | 밀리의 서재</title>
+    <title>상품페이지 | 밀리의 서재</title>
     <link rel="shortcut icon" href="img/index/pavicon.png">
     <link rel="stylesheet" href="css/sub.css">
     <link rel="stylesheet" href="css/common.css">
@@ -17,10 +17,10 @@
 
 <body>
     <nav>
-        <a href="#"><img src="img/index/full-logo.png" alt="logo"></a>
+        <a href="index.html"><img src="img/index/full-logo.png" alt="logo"></a>
         <div class="right_menu">
-            <div class="menu"><a href="#">기업문의</a></div>
-            <div class="menu"><a href="#">계정관리</a></div>
+            <div class="menu"><a href="index.html">기업문의</a></div>
+            <div class="menu"><a href="index.html">계정관리</a></div>
             <button type="button">로그인</button>
         </div>
     </nav>
@@ -41,17 +41,30 @@
                     <h3>고민하는 청춘을 위한 심리학 수업 <br> 연세대 학생들이 3년 연속 선정한 명품 강좌!</h3>
                 </div>
                 <div class="book_price">
-
+                    <h2>양장본 <span>15,000원</span></h2>
+                    <h2>종이책 <span>13,500원 (10% 할인)</span></h2>
+                    <h2>eBook <b>10,500</b>
+                        <i>원 (30% 할인)</i>
+                    </h2>
+                    <label for="book_select">책 종류를 선택하세요.</label><br>
+                    <select name="books" id="book_select">
+                        <option value="book1">양장본 15,000원</option>
+                        <option value="book2">종이책 13,500원</option>
+                        <option value="book3">eBook 10,500원</option>
+                    </select>
+                    <button type="button">구독하기 (eBook전용)</button>
+                    <button type="button">구매하기 (양장본, 종이책)</button>
                 </div>
+
             </div>
         </div>
     </section>
 
     <div class="tap_menu">
         <ul>
-            <li class="tap1">도서정보</li>
-            <li class="tap2">품목정보</li>
-            <li class="tap3">리뷰</li>
+            <li class="tap1 tap_on"><i class="fa-solid fa-book-open"></i><br>도서정보</li>
+            <li class="tap2"><i class="fa-solid fa-book"></i><br>품목정보</li>
+            <li class="tap3"><i class="fa-solid fa-comments"></i><br>리뷰</li>
         </ul>
     </div>
 
@@ -96,23 +109,6 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="cont">
-                        <span>나 자신을 알아가기 좋은 책입니다</span>
-                    </div>
-                    <div class="bottom">
-                        <span>이 한줄평이 도움이 되었나요?</span>
-                        <span class="like"><b>♡</b> 0</span>
-                    </div>
-                </div>
-                <div class="user">rla*ls | 2018-05-12</div>
-
-                <div class="review">
-                    <div class="rating">
-                        <span>구독</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="cont">
@@ -134,14 +130,33 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="cont">
-                        <span>나 자신을 알아가기 좋은 책입니다</span>
+                        <span>나를 위한 책이다</span>
                     </div>
                     <div class="bottom">
                         <span>이 한줄평이 도움이 되었나요?</span>
                         <span class="like"><b>♡</b> 0</span>
                     </div>
                 </div>
-                <div class="user">rla*ls | 2018-05-12</div>
+                <div class="user"> 닉*임 | 2018-02-04</div>
+
+                <div class="review">
+                    <div class="rating">
+                        <span>구독</span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="cont">
+                        <span>만족! 위로가 됩니다.</span>
+                    </div>
+                    <div class="bottom">
+                        <span>이 한줄평이 도움이 되었나요?</span>
+                        <span class="like"><b>♡</b> 0</span>
+                    </div>
+                </div>
+                <div class="user"> 콩* | 2017-09-24</div>
 
                 <div class="review">
                     <div class="rating">
@@ -152,14 +167,33 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="cont">
-                        <span>나 자신을 알아가기 좋은 책입니다</span>
+                        <span>나를 모르는 나에게.... 이 책을 보라고 권한다</span>
                     </div>
                     <div class="bottom">
                         <span>이 한줄평이 도움이 되었나요?</span>
                         <span class="like"><b>♡</b> 0</span>
                     </div>
                 </div>
-                <div class="user">rla*ls | 2018-05-12</div>
+                <div class="user">h*******6 | 2018-04-13</div>
+
+                <div class="review">
+                    <div class="rating">
+                        <span>구독</span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="cont">
+                        <span>자존감 급상승하는 심리학 수업</span>
+                    </div>
+                    <div class="bottom">
+                        <span>이 한줄평이 도움이 되었나요?</span>
+                        <span class="like"><b>♡</b> 0</span>
+                    </div>
+                </div>
+                <div class="user">p****e | 2017-10-06</div>
 
                 <div class="review">
                     <div class="rating">
@@ -170,42 +204,24 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="cont">
-                        <span>나 자신을 알아가기 좋은 책입니다</span>
+                        <span>아직도 나도 나를 잘 모르는 이들에게 들려주는 이야기</span>
                     </div>
                     <div class="bottom">
                         <span>이 한줄평이 도움이 되었나요?</span>
                         <span class="like"><b>♡</b> 0</span>
                     </div>
                 </div>
-                <div class="user">rla*ls | 2018-05-12</div>
-
-                <div class="review">
-                    <div class="rating">
-                        <span>구독</span>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <div class="cont">
-                        <span>나 자신을 알아가기 좋은 책입니다</span>
-                    </div>
-                    <div class="bottom">
-                        <span>이 한줄평이 도움이 되었나요?</span>
-                        <span class="like"><b>♡</b> 0</span>
-                    </div>
-                </div>
-                <div class="user">rla*ls | 2018-05-12</div>
+                <div class="user">h***4 | 2017-04-08</div>
             </div>
 
             <div class="page">
                 <div class="page_left">
                     <i class="fa-solid fa-angles-left"></i> <i class="fa-solid fa-angle-left"></i>
-                    <span>1 2 3 </span>
+                    <span>1 2 3</span>
                     <i class="fa-solid fa-angle-right"></i> <i class="fa-solid fa-angles-right"></i>
                 </div>
                 <div class="page_right">
-                    <span> 최근순 | 추천순 | 별점순</span>
+                    <span> <b>최근순</b> | 추천순 | 별점순</span>
                 </div>
             </div>
         </div>
@@ -213,15 +229,22 @@
 
     <div id="related">
         <h2>이 책을 구입하신 분들이 함께 산 책</h2>
+        <div class="prev"><i class="fa-solid fa-angle-left"></i></div>
+        <div class="next"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="slide_wrap">
+            <ul class="slide">
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+            </ul>
+        </div>
 
-        <ul>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-        </ul>
     </div>
 
     <footer>

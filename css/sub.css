@@ -1,3 +1,7 @@
+.tap_on {
+  background-color: #f7f7f7;
+}
+
 section {
   width: 100%;
   height: 650px;
@@ -58,6 +62,51 @@ section .book_wrap .book_box .book_price {
   width: 95%;
   margin: 0 auto;
 }
+section .book_wrap .book_box .book_price h2 {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 24px;
+}
+section .book_wrap .book_box .book_price h2 span {
+  padding-left: 48px;
+}
+section .book_wrap .book_box .book_price h2 b {
+  font-size: 24px;
+  padding-left: 44px;
+  color: #ff6666;
+}
+section .book_wrap .book_box .book_price h2 i {
+  font-style: normal;
+  color: #ff6666;
+}
+section .book_wrap .book_box .book_price label {
+  margin-top: 24px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  display: inline-block;
+}
+section .book_wrap .book_box .book_price select {
+  width: 100%;
+  height: 50px;
+  padding: 8px 12px;
+  border: 1px solid #dfdfdf;
+}
+section .book_wrap .book_box .book_price button {
+  width: 35%;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 24px;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+  cursor: pointer;
+}
+section .book_wrap .book_box .book_price button:last-child {
+  width: 65%;
+  background-color: #242424;
+  color: #fff;
+  cursor: pointer;
+  float: right;
+}
 
 .tap_menu {
   width: 100%;
@@ -73,11 +122,14 @@ section .book_wrap .book_box .book_price {
 .tap_menu ul li {
   width: 380px;
   height: 100px;
-  background-color: #f7f7f7;
   text-align: center;
   font-size: 14px;
-  padding-top: 40px;
+  padding-top: 29px;
   cursor: pointer;
+}
+.tap_menu ul li i {
+  font-size: 18px;
+  margin-bottom: 4px;
 }
 
 #book_info {
@@ -101,6 +153,7 @@ section .book_wrap .book_box .book_price {
   width: 1200px;
   margin: 0 auto;
   padding: 2.5%;
+  display: none;
 }
 #book_info .contents2 h2 {
   font-size: 20px;
@@ -132,6 +185,7 @@ section .book_wrap .book_box .book_price {
   width: 1200px;
   margin: 0 auto;
   padding: 2.5%;
+  display: none;
 }
 #book_info .contents3 h2 {
   font-size: 20px;
@@ -204,7 +258,7 @@ section .book_wrap .book_box .book_price {
   text-align: center;
 }
 #book_info .contents3 .review_box .review .bottom .like b {
-  color: #ff90c4;
+  color: #ff6666;
 }
 #book_info .contents3 .review_box .user {
   width: 450px;
@@ -227,6 +281,10 @@ section .book_wrap .book_box .book_price {
   padding-top: 15.5px;
   padding-left: 15px;
   letter-spacing: 5px;
+  cursor: pointer;
+}
+#book_info .contents3 .page .page_left i {
+  color: #dfdfdf;
 }
 #book_info .contents3 .page .page_left span {
   letter-spacing: 5px;
@@ -235,6 +293,7 @@ section .book_wrap .book_box .book_price {
   float: right;
   font-size: 13px;
   padding-top: 14px;
+  cursor: pointer;
 }
 #book_info .contents3 .page .page_right span {
   letter-spacing: 1px;
@@ -245,33 +304,82 @@ section .book_wrap .book_box .book_price {
   width: 1200px;
   height: 500px;
   margin: 0 auto;
+  position: relative;
 }
 #related h2 {
   padding-top: 80px;
   font-size: 20px;
   margin-bottom: 16px;
 }
-#related ul {
+#related .prev {
+  position: absolute;
+  top: 55%;
+  left: -5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  font-size: 25px;
+  color: #dfdfdf;
+  cursor: pointer;
+}
+#related .prev i {
+  color: #dfdfdf;
+}
+#related .prev:hover {
+  background-color: #242424;
+  transition: all 0.3s;
+}
+#related .prev:hover i {
+  color: #fff;
+}
+#related .next {
+  position: absolute;
+  top: 55%;
+  right: -5%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  font-size: 25px;
+  color: #dfdfdf;
+  cursor: pointer;
+}
+#related .next i {
+  color: #dfdfdf;
+}
+#related .next:hover {
+  background-color: #242424;
+  transition: all 0.3s;
+}
+#related .next:hover i {
+  color: #fff;
+}
+#related .slide_wrap {
+  width: 1200px;
+  height: 365px;
+  overflow: hidden;
+}
+#related .slide_wrap ul {
   display: flex;
-  justify-content: space-evenly;
   border: 1px solid #dfdfdf;
 }
-#related ul li {
+#related .slide_wrap ul li {
   border: 1px solid #dfdfdf;
-  width: 200px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#related ul li img {
+#related .slide_wrap ul li img {
   width: 145px;
   padding-bottom: 10px;
   padding-top: 16px;
 }
-#related ul li h4 {
+#related .slide_wrap ul li h4 {
   width: 145px;
 }
-#related ul li h5 {
+#related .slide_wrap ul li h5 {
   width: 145px;
   font-size: 14px;
   color: #6f6f6f;
