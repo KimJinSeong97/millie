@@ -68,6 +68,7 @@ section .book_wrap .book_box .book_price {
   width: 1200px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
 .tap_menu ul li {
   width: 380px;
@@ -81,6 +82,199 @@ section .book_wrap .book_box .book_price {
 
 #book_info {
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #f7f7f7;
+}
+#book_info .contents1 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2.5%;
+  line-height: 30px;
+}
+#book_info .contents1 h2 {
+  font-size: 20px;
+}
+#book_info .contents1 b {
+  color: #6f6f6f;
+}
+#book_info .contents2 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2.5%;
+}
+#book_info .contents2 h2 {
+  font-size: 20px;
+}
+#book_info .contents2 table {
+  max-width: 940px;
+  margin: 0 auto;
+  border-top: 1px solid #dfdfdf;
+  border-collapse: collapse;
+}
+#book_info .contents2 table th {
+  width: 170px;
+  height: 41px;
+  background-color: #f8f8f8;
+  font-weight: 400;
+  font-size: 13px;
+  border-right: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+#book_info .contents2 table td {
+  width: 770px;
+  font-size: 12px;
+  color: #6f6f6f;
+  background-color: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  padding-left: 14px;
+}
+#book_info .contents3 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2.5%;
+}
+#book_info .contents3 h2 {
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+#book_info .contents3 h2 i {
+  font-size: 36px;
+  color: #ffeb60;
+}
+#book_info .contents3 h2 b {
+  font-size: 40px;
+}
+#book_info .contents3 h2 span {
+  color: #6f6f6f;
+}
+#book_info .contents3 .review_box {
+  width: 1100px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#book_info .contents3 .review_box .review {
+  width: 450px;
+  height: 150px;
+  background-color: #fff;
+  margin-top: 16px;
+  border: 1px solid #dfdfdf;
+}
+#book_info .contents3 .review_box .review .rating {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+#book_info .contents3 .review_box .review .rating span {
+  font-size: 12px;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  padding: 0.5%;
+  margin-right: 8px;
+  display: inline-block;
+  width: 35px;
+  text-align: center;
+}
+#book_info .contents3 .review_box .review .rating i {
+  font-size: 12px;
+  color: #ffeb60;
+}
+#book_info .contents3 .review_box .review .cont {
+  padding-top: 1%;
+  padding-left: 5%;
+  font-size: 15px;
+}
+#book_info .contents3 .review_box .review .bottom {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+#book_info .contents3 .review_box .review .bottom span {
+  color: #6f6f6f;
+  font-size: 12px;
+}
+#book_info .contents3 .review_box .review .bottom .like {
+  width: 30px;
+  height: 21px;
+  border: 1px solid #dfdfdf;
+  display: inline-block;
+  text-align: center;
+}
+#book_info .contents3 .review_box .review .bottom .like b {
+  color: #ff90c4;
+}
+#book_info .contents3 .review_box .user {
+  width: 450px;
+  text-align: right;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #6f6f6f;
+}
+#book_info .contents3 .page {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #dfdfdf;
+  margin-top: 16px;
+}
+#book_info .contents3 .page .page_left {
+  float: left;
+  font-size: 13px;
+  padding-top: 15.5px;
+  padding-left: 15px;
+  letter-spacing: 5px;
+}
+#book_info .contents3 .page .page_left span {
+  letter-spacing: 5px;
+}
+#book_info .contents3 .page .page_right {
+  float: right;
+  font-size: 13px;
+  padding-top: 14px;
+}
+#book_info .contents3 .page .page_right span {
+  letter-spacing: 1px;
+  padding-right: 15px;
+}
+
+#related {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+}
+#related h2 {
+  padding-top: 80px;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+#related ul {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #dfdfdf;
+}
+#related ul li {
+  border: 1px solid #dfdfdf;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#related ul li img {
+  width: 145px;
+  padding-bottom: 10px;
+  padding-top: 16px;
+}
+#related ul li h4 {
+  width: 145px;
+}
+#related ul li h5 {
+  width: 145px;
+  font-size: 14px;
+  color: #6f6f6f;
+  font-weight: 400;
+  margin-bottom: 3px;
 }
